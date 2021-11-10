@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Shrikhand&display=swap');
 
-
 html {
     background-color: #17252a;
     font-family: 'Fanwood Text', serif;
@@ -54,6 +53,93 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+/* Positioning Rules Start here */
+
+.text-align-center{
+    text-align: center;
+    background-color: aqua;
+}
+
+.margin-auto > div{
+    margin: auto;
+    width: 50%;
+    background-color: firebrick;
+    text-align: center;
+}
+
+
+
+/* Positioning Rules End here */
+
+
+/* Responsive 2 Column Layout Starts Here */
+
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ 
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+/* Responsive 2 Column Layout Ends Here */
+
+
+/* Font Awesome Flexbox Social Media Rules Start Here */
+
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+   border-radius: 50%;
+ }
+  .fa:hover {
+     opacity: 0.7;
+ }
+  .fa-facebook {
+   background: #3B5998;
+   color: white;
+ }
+  .fa-twitter {
+   background: #55ACEE;
+   color: white;
+ }
+  .fa-youtube {
+   background: #bb0000;
+   color: white;
+ }
+  .fa-instagram {
+   background: #125688;
+   color: white;
+ }
+  .fa-snapchat-ghost {
+   background: #fffc00;
+   color: white;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+ .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+
+/* Font Awesome Flexbox Social Media Rules End Here */
 
 /* Responsive rules */
 
@@ -112,4 +198,9 @@ footer {
         width: 100%;
     }
     
+    /* View column stacked in phone */
+    .column {
+        width: 100%;
+    } 
+
 }
