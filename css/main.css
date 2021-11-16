@@ -114,6 +114,7 @@ footer {
   .fa-facebook {
    background: #3B5998;
    color: white;
+   padding: 20px 25px; /* Facebook icon looks like an egg withouth this */
  }
   .fa-twitter {
    background: #55ACEE;
@@ -141,6 +142,18 @@ footer {
 
 /* Font Awesome Flexbox Social Media Rules End Here */
 
+/* Flexible Image Rules Start Here */
+
+.flexible img {
+    width: 100%;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Flexible Image Rules End Here */
 /* Responsive rules */
 
 /* DESKTOP */
